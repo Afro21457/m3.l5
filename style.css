@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+body{
+
+    background-color: black;
+
+}
+@keyframes square-to-circle{
+0%{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+ 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+25%{
+    width: 100px;
+    height: 100px;
+background-color:pink ;
+left:400px;
+top: 0;
+/* top: 400px; */
+}
+50%{
+    width: 100px;
+    height: 100px;
+background-color: white;
+top: 400px;
+left: 400px;
+}
+75%{
+    width: 100px;
+    height: 100px;
+top: 400px;
+left:0 ;
+background-color: burlywood;
+}
+100%{
+    width: 100px;
+    height: 100px;
+   top:0 ;
+   left: 0;
+background-color: red;
+}
+}
+.square{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+    animation: square-to-circle 4s infinite  ;
+}
